@@ -41,10 +41,10 @@ body {
 }
 
 /* JavaScript */
-.nav:active {
+.nav.active {
   background: white;
 }
-.nav:active a {
+.nav.active a {
   color: #000;
 }
 
@@ -72,4 +72,25 @@ body {
   letter-spacing: 1px;
   max-width: 700px;
   line-height: 30px;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(245, 246, 247);
+}
+.content {
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background: rgb(220, 225, 230);
+}
+.content h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+.content p {
+  font-family: sans-serif;
+  line-height: 25px;
 }
