@@ -13,6 +13,11 @@ function getRandomJoke() {
       let data = JSON.parse(ajax.responseText);
       displayJoke.innerHTML = `${data.value}`;
     } else {
+  ajax.onerror = onerror();
     }
   };
+  ajax.send();
+}
+function onerror() {
+  displayJoke.textContent = "Something went wrong :(";
 }
